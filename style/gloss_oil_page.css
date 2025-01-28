@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #F5EBEB;  
+    --secondary-color: #E4D0D0; 
+    --accent-color: #D5B4B4;    
+    --highlight-color: #867070; 
+}
+
+body {
+    background-color: var(--secondary-color); 
+    color: var(--primary-color);             
+    font-family: Arial, sans-serif;       
+    min-height: 100vh;  
+}
+.navbar{
+    z-index: 2;
+    top: 0;
+    position: sticky;
+}
+.container-fluid, .navbar{
+    position: sticky;
+    background-color: var(--highlight-color);
+}
+
+.nav-link{
+    color: var(--primary-color);     
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive; 
+    color: var(--primary-color);      
+    font-size: 1.5rem;             
+}
+.navbar-brand:hover {
+    cursor: context-menu;
+    font-family: 'Pacifico', cursive; 
+    color: var(--primary-color);      
+    font-size: 1.5rem;             
+}
+
+.btn{
+    background-color: var(--accent-color);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: black;
+}
+.title{
+    margin: 10px;
+    color: black;
+    text-shadow: 15px 15px 12px var(--accent-color);
+}
+hr{
+    color: var(--highlight-color);
+}

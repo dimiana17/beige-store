@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #F5EBEB;  
+    --secondary-color: #E4D0D0; 
+    --accent-color: #D5B4B4;    
+    --highlight-color: #867070; 
+}
+
+body {
+    background-color: var(--secondary-color); 
+    color: var(--primary-color);             
+    font-family: Arial, sans-serif;       
+    min-height: 100vh;  
+}
+.navbar{
+    z-index: 2;
+    top: 0;
+    position: sticky;
+}
+.container-fluid, .navbar{
+    position: sticky;
+    background-color: var(--highlight-color);
+}
+
+.nav-link{
+    color: var(--primary-color);     
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive; 
+    color: var(--primary-color);      
+    font-size: 1.5rem;             
+}
+.navbar-brand:hover {
+    cursor: context-menu;
+    font-family: 'Pacifico', cursive; 
+    color: var(--primary-color);      
+    font-size: 1.5rem;             
+}
+
+.btn{
+    background-color: var(--accent-color);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: black;
+}
+.head-image {
+    margin: auto;
+    width: 1450px; 
+    height: 200px; 
+    overflow: hidden;
+    text-align: center; 
+}
+
+.head-image img {
+    margin-top: 20px;
+    width: 100%; 
+    height: 200px;  
+    object-fit: cover;
+    display: block; 
+}
+
+
+.category {
+    color: var(--highlight-color); /* Using the highlight color for text */
+    font-size: 2rem; /* Slightly smaller font size for a clean, modern look */
+    font-weight: 600; /* Semi-bold weight for clarity */
+    margin: 0;
+    text-align: center; /* Center-align for better presentation */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+    font-family: 'Arial', sans-serif; /* Simple, easy-to-read font */
+}
+
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.card,
+.swiper-slide{
+
+    border-radius: 25px;
+    background-color: #FFF;
+    border: 0;
+    transition-duration: .2s;
+}
+.card:hover{
+    transform: scale(.9);
+    
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.card-content{
+    position: relative;
+    padding: 25x 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 55%;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--accent-color);
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 6px;
+    margin: 14px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.arrow{
+    /* color: var(--highlight-color); */
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
